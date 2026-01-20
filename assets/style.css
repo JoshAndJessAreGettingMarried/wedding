@@ -277,3 +277,70 @@ a.underline:hover{ opacity: .9; }
 }
 
 
+/* --- Slideshow --- */
+.slideshow{
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slide-viewport{
+  width: 100%;
+  aspect-ratio: 16 / 10;   /* change if you prefer */
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(58,47,59,.12);
+}
+
+.slide-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;       /* use contain if you don't want cropping */
+}
+
+.slide-btn{
+  height: 44px;
+  width: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(31,111,120,.28);
+  background: rgba(255,255,255,.70);
+  color: #1F6F78;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide-btn:hover{
+  background: rgba(255,255,255,.92);
+}
+
+.slide-btn:active{
+  transform: scale(.98);
+}
+
+.slide-dots{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slide-dot{
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(58,47,59,.22);
+  background: rgba(58,47,59,.18);
+  cursor: pointer;
+}
+
+.slide-dot.active{
+  background: #F2B705; /* mustard highlight */
+  border-color: rgba(242,183,5,.65);
+}
+
