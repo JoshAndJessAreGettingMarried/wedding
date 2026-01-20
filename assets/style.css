@@ -245,3 +245,16 @@ a.underline:hover{ opacity: .9; }
   outline-offset: 3px;
   border-radius: 10px;
 }
+
+@font-face{
+  font-family: "MyWeddingFont";
+  src: url("assets/fonts/Wedding.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.Headline{
+  font-family: "MyWeddingFont";
+  font-size: 30px;
+}
