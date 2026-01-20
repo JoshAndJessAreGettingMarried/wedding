@@ -168,34 +168,30 @@ a.underline{ text-decoration: underline; text-underline-offset: 3px; }
   justify-content: space-between;
 }
 
-/* --- Google Form mobile embed fix --- */
+/* --- Google Form embed (clean, no scrollbars) --- */
+
 .form-embed {
   width: 100%;
-  overflow: hidden;          /* hides the right overflow */
-  border-radius: 16px;
+  overflow: visible;        /* allow page to scroll, not the div */
+  border-radius: 18px;
+  background: transparent; /* removes white background */
 }
 
 .form-embed iframe {
-  width: 1px;                /* trick: allow min-width to control size */
-  min-width: 100%;
-  max-width: 100%;
-  border: 0;
+  display: block;
+  width: 100%;
+  border: none;             /* removes iframe border */
+  background: transparent;
 }
 
-/* iPhone / small screens: scale the form to fit */
+/* iOS Safari horizontal overflow fix */
 @media (max-width: 520px) {
-  .form-embed {
-    overflow: hidden;
-  }
   .form-embed iframe {
-    /* Scale down slightly to prevent horizontal spill on iOS */
-    transform: scale(0.92);
-    transform-origin: top left;
-
-    /* Compensate width so scaled content still fills the screen */
-    width: 108.7%;
-    min-width: 108.7%;
+    width: 100vw;           /* force viewport width */
+    max-width: 100%;
   }
 }
+
+
 
 
