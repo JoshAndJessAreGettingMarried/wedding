@@ -248,7 +248,7 @@ a.underline:hover{ opacity: .9; }
 
 @font-face{
   font-family: "MyWeddingFont";
-  src: url("assets/Fonts/Wedding.ttf") format("truetype");
+  src: url("Fonts/Wedding.ttf") format("truetype");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -258,4 +258,5 @@ a.underline:hover{ opacity: .9; }
   font-family: "MyWeddingFont";
   font-size: 30px;
 }
+
 
