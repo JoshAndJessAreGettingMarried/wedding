@@ -260,12 +260,20 @@ a.underline:hover{ opacity: .9; }
   text-align: center;
 }
 
-.img {
+.img-wrap{
+  max-width: 100%;
+  overflow: hidden;           /* prevents spill */
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  object-fit: contain;
+  box-shadow:
+    0 4px 8px rgba(0,0,0,.15),
+    0 6px 20px rgba(0,0,0,.12);
 }
 
-
+/* THIS is the important part */
+.img-wrap img{
+  display: block;             /* removes inline-gap */
+  max-width: 100%;            /* never exceed container width */
+  height: auto;               /* preserve aspect ratio */
+}
 
 
