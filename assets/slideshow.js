@@ -4,6 +4,7 @@
     { src: "assets/TheOldHouse_2.jpg", alt: "The Old House venue photo 2" },
     { src: "assets/TheOldHouse_3.jpg", alt: "The Old House venue photo 3" },
     { src: "assets/TheOldHouse_4.jpg", alt: "The Old House venue photo 4" },
+    { src: "assets/TheOldHouse_1.jpg", alt: "The Old House venue photo 1" },
   ];
 
   const img = document.querySelector(".slide-img");
