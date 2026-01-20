@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wedding — 2 May 2027</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="container nav">
+      <div class="brand">
+        <strong>We’re getting married!</strong>
+        <span>Sunday 2nd May 2027 • The Old House</span>
+      </div>
+      <div class="navlinks">
+        <a class="pill" href="rsvp.html">RSVP</a>
+        <a class="pill" href="venue.html">Venue</a>
+        <a class="pill" href="schedule.html">Schedule</a>
+        <a class="pill" href="faqs.html">FAQs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1 class="h1">Come celebrate with us 🥂🎤</h1>
+      <p class="sub">
+        A relaxed, non-traditional wedding with BYOB drinks, food vans, second-hand outfits (if you fancy),
+        a talent show, karaoke, and lots of time to just hang out.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn primary" href="rsvp.html">RSVP (Invite Code needed)</a>
+        <a class="btn" href="venue.html">Venue & Travel</a>
+        <a class="btn" href="schedule.html">Schedule</a>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h2>When & where</h2>
+        <p><strong>Sunday, 2nd May 2027</strong><br/>The Old House, Rectory Lane, Wolverton, Tadley RG26 5RS</p>
+        <p class="small">We’ll confirm timings closer to the date.</p>
+      </div>
+
+      <div class="card">
+        <h2>What to expect</h2>
+        <ul>
+          <li>BYOB (bring what you love — alcoholic or not)</li>
+          <li>Buffet + food vans</li>
+          <li>Second-hand / re-worn outfits encouraged</li>
+          <li>Talent show + karaoke</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>Questions? See <a class="underline" href="contact.html">Contact</a>.</span>
+      <span>Last updated: <span id="lu"></span></span>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('lu').textContent = new Date().toLocaleDateString('en-GB');
+  </script>
+</body>
+</html>
