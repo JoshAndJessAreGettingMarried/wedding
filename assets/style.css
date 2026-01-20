@@ -288,7 +288,7 @@ a.underline:hover{ opacity: .9; }
 
 .slide-viewport{
   width: 100%;
-  aspect-ratio: 16 / 10;   /* change if you prefer */
+  aspect-ratio: 4 / 3;   /* change if you prefer */
   border-radius: 18px;
   overflow: hidden;
   background: rgba(255,255,255,.55);
@@ -343,4 +343,5 @@ a.underline:hover{ opacity: .9; }
   background: #F2B705; /* mustard highlight */
   border-color: rgba(242,183,5,.65);
 }
+
 
